@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/nicke/kitchenplan/config/people'
+let g:netrw_dirhist_2='/opt/kitchenplan/config'
+let g:netrw_dirhist_3='/private/tmp/kitchenplan/lib/kitchenplan'
+let g:netrw_dirhist_4='/opt/kitchenplan/config'
+let g:netrw_dirhist_5='/opt/kitchenplan/config/groups'
+let g:netrw_dirhist_6='/Users/nicke/w/fooheads.com'
