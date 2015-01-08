@@ -73,7 +73,7 @@ endfor
 
 " Vim slow with syntax highlighting:
 " http://stackoverflow.com/questions/16902317/vim-slow-with-ruby-syntax-highlighting
-set re=1
+" set re=1
 
 " Vundle, the plugin manager: https://github.com/gmarik/vundle
 " ------------------------------------------------------------ 
