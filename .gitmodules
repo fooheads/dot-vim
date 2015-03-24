@@ -1,0 +1,13 @@
+[submodule "home/.vim/bundle/ctrlp.vim"]
+  path = home/.vim/bundle/ctrlp.vim
+  url = https://github.com/kien/ctrlp.vim
+[submodule "home/.vim/bundle/vundle"]
+  path = home/.vim/bundle/vundle
+  url = https://github.com/gmarik/vundle.git
+[submodule "home/.vim/bundle/vim-colors-solarized"]
+  path = home/.vim/bundle/vim-colors-solarized
+  url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "home/.vim/bundle/vim-surround"]
+  path = home/.vim/bundle/vim-surround
+  url = https://github.com/tpope/vim-surround
+
