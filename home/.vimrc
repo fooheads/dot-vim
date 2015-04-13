@@ -149,3 +149,7 @@ function! Tab_Or_Complete()
 endfunction
 inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 
+" No more swap och backup files. Git will do just fine.
+set nobackup
+set nowritebackup
+set noswapfile
