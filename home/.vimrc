@@ -128,7 +128,9 @@ filetype plugin indent on     " required!
 let g:CommandTMaxFiles=20000
 let g:CommandTMatchWindowReverse=1
 
-colorscheme solarized
+if has("gui_macvim")
+   colorscheme solarized
+endif
 
 if has('gui_running')
     set background=light
