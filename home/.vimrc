@@ -109,6 +109,13 @@ Bundle 'git://github.com/altercation/vim-colors-solarized.git'
 " Would be nice to use Dash
 " Plugin 'rizzatti/dash.vim'
 
+" vim snippets stuff
+Bundle "tomtom/tlib_vim"
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "garbas/vim-snipmate"
+Bundle "honza/vim-snippets"
+
+
 set tags=./tags;/
 
 filetype plugin indent on     " required!
@@ -147,7 +154,9 @@ function! Tab_Or_Complete()
     return "\<Tab>"
   endif
 endfunction
+
 inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
+imap <C-S>  <Plug>snipMateNextOrTrigger
 
 " No more swap och backup files. Git will do just fine.
 set nobackup
