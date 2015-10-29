@@ -9,6 +9,8 @@ nmap <Leader><Leader> V
 
 " Press Space to toggle highlighting on/off, and show current value.
 " noremap <Space> :set hlsearch! hlsearch?<CR>
+nnoremap <Leader>s :set hlsearch! hlsearch?<CR>
+
 
 " Tab completion
 set wildmode=longest,list,full

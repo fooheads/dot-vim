@@ -21,4 +21,6 @@ set noswapfile
 let g:CommandTMaxFiles=20000
 let g:CommandTMatchWindowReverse=1
 
+" Autosave
+autocmd BufLeave,FocusLost * silent! wall
 
