@@ -18,6 +18,8 @@ Bundle 'gmarik/vundle'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Bundle 'tpope/vim-rails.git'
 Bundle 'kien/ctrlp.vim'
+let g:ctrlp_follow_symlinks = 1
+
 Bundle 'tpope/vim-surround'
 
 " vim-scripts repos
