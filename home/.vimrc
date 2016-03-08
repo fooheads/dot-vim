@@ -11,6 +11,7 @@ source ~/.vim/functions.vim
 source ~/.vim/indent.vim
 source ~/.vim/keymappings.vim
 source ~/.vim/settings.vim
+source ~/.vim/syntax.vim
 source ~/.vim/ui.vim
 
 
