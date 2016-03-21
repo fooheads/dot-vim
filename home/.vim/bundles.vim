@@ -48,7 +48,11 @@ silent! nmap <unique> <Leader>R :VroomRunTestFile<CR>
 silent! nmap <unique> <Leader>r :VroomRunNearestTest<CR>
 silent! nmap <unique> <Leader>l :VroomRunLastTest<CR>
 
+" fugitive for git
+Bundle 'tpope/vim-fugitive'
+
 set tags=./tags;/
+
 
 filetype plugin indent on     " required!
 "
