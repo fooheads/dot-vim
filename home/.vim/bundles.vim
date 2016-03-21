@@ -40,6 +40,14 @@ Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
 
+" Use Vroom to run test/specs/features
+let g:vroom_map_keys = 0
+let g:vroom_cucumber_path = 'cucumber '
+Bundle 'skalnik/vim-vroom'
+silent! nmap <unique> <Leader>R :VroomRunTestFile<CR>
+silent! nmap <unique> <Leader>r :VroomRunNearestTest<CR>
+silent! nmap <unique> <Leader>l :VroomRunLastTest<CR>
+
 set tags=./tags;/
 
 filetype plugin indent on     " required!
