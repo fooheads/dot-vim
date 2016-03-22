@@ -11,6 +11,11 @@ nmap <Leader><Leader> V
 " noremap <Space> :set hlsearch! hlsearch?<CR>
 nnoremap <Leader>s :set hlsearch! hlsearch?<CR>
 
+" Split navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " Tab completion
 set wildmode=longest,list,full

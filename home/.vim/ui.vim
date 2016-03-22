@@ -23,6 +23,14 @@ set ruler
 " Avoid 'No write since last change' message
 set hidden
 
+" Cursor shape in different modes: tmux in iTerm2
+" from: http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes
+if $TMUX != '' && $TERM_PROGRAM == 'iTerm.app'
+  let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+  let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
+  let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+endif
+
 "set background=light
 "let g:solarized_termtrans = 1
 "let g:solarized_termcolors=256

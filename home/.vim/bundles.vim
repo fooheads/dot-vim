@@ -53,6 +53,8 @@ Bundle 'tpope/vim-fugitive'
 
 set tags=./tags;/
 
+" Symmetric navigation inside vim and between vim/tmux
+Bundle 'christoomey/vim-tmux-navigator'
 
 filetype plugin indent on     " required!
 "
