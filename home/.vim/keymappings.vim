@@ -36,3 +36,8 @@ inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 imap <C-S>  <Plug>snipMateNextOrTrigger
 
 
+" Insert UUID  
+imap <C-J>u <C-r>=substitute(system("uuidgen"), '.$', '', 'g')<CR>
+
+
+
