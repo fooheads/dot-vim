@@ -24,3 +24,5 @@ let g:CommandTMatchWindowReverse=1
 " Autosave
 autocmd BufLeave,FocusLost * silent! wall
 
+" Do not wrap searches
+set nowrapscan
