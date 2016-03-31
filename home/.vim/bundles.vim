@@ -20,7 +20,11 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_follow_symlinks = 1
 
+" surround.vim
 Bundle 'tpope/vim-surround'
+
+" repeat.vim - makes repeat work for some plugins, like surround.vim
+Bundle "tpope/vim-repeat.git"
 
 " vim-scripts repos
 " Bundle 'L9'
@@ -43,6 +47,7 @@ Bundle "honza/vim-snippets"
 " Use Vroom to run test/specs/features
 let g:vroom_map_keys = 0
 let g:vroom_cucumber_path = 'cucumber '
+let g:vroom_spec_command = 'rspec'
 Bundle 'skalnik/vim-vroom'
 silent! nmap <unique> <Leader>R :VroomRunTestFile<CR>
 silent! nmap <unique> <Leader>r :VroomRunNearestTest<CR>
@@ -57,6 +62,9 @@ set tags=./tags;/
 Bundle 'christoomey/vim-tmux-navigator'
 
 filetype plugin indent on     " required!
+
+"Bundle 'vim-scripts/repeatable-motions.vim'
+
 "
 " Brief help
 " :BundleList          - list configured bundles
