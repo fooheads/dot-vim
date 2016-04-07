@@ -16,14 +16,14 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugin 'Lokaltog/vim-easymotion'
 " Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Plugin 'tpope/vim-rails.git'
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 let g:ctrlp_follow_symlinks = 1
 
 " surround.vim
 Plugin 'tpope/vim-surround'
 
 " repeat.vim - makes repeat work for some plugins, like surround.vim
-Plugin "tpope/vim-repeat.git"
+Plugin 'tpope/vim-repeat.git'
 
 " vim-scripts repos
 " Plugin 'L9'
@@ -38,10 +38,10 @@ Plugin 'git://github.com/altercation/vim-colors-solarized.git'
 " Plugin 'rizzatti/dash.vim'
 
 " vim snippets stuff
-Plugin "tomtom/tlib_vim"
-Plugin "MarcWeber/vim-addon-mw-utils"
-Plugin "garbas/vim-snipmate"
-Plugin "honza/vim-snippets"
+Plugin 'tomtom/tlib_vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 
 " Use Vroom to run test/specs/features
 let g:vroom_map_keys = 0
