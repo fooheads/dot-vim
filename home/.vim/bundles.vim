@@ -3,79 +3,82 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 
 " My Bundles here:
 "
 " original repos on github
-" Bundle 'tpope/vim-fugitive'
-" Bundle 'Lokaltog/vim-easymotion'
-" Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Bundle 'tpope/vim-rails.git'
+" Plugin 'tpope/vim-fugitive'
+" Plugin 'Lokaltog/vim-easymotion'
+" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Plugin 'tpope/vim-rails.git'
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_follow_symlinks = 1
 
 " surround.vim
-Bundle 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
 
 " repeat.vim - makes repeat work for some plugins, like surround.vim
-Bundle "tpope/vim-repeat.git"
+Plugin "tpope/vim-repeat.git"
 
 " vim-scripts repos
-" Bundle 'L9'
-" Bundle 'FuzzyFinder'
+" Plugin 'L9'
+" Plugin 'FuzzyFinder'
 
 " non github repos
-" Bundle 'git://git.wincent.com/command-t.git'
-Bundle 'git://github.com/altercation/vim-colors-solarized.git'
+" Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'git://github.com/altercation/vim-colors-solarized.git'
 " ...
 
 " Would be nice to use Dash
 " Plugin 'rizzatti/dash.vim'
 
 " vim snippets stuff
-Bundle "tomtom/tlib_vim"
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "garbas/vim-snipmate"
-Bundle "honza/vim-snippets"
+Plugin "tomtom/tlib_vim"
+Plugin "MarcWeber/vim-addon-mw-utils"
+Plugin "garbas/vim-snipmate"
+Plugin "honza/vim-snippets"
 
 " Use Vroom to run test/specs/features
 let g:vroom_map_keys = 0
 let g:vroom_cucumber_path = 'cucumber '
 let g:vroom_spec_command = 'rspec'
-Bundle 'skalnik/vim-vroom'
+Plugin 'skalnik/vim-vroom'
 silent! nmap <unique> <Leader>R :VroomRunTestFile<CR>
 silent! nmap <unique> <Leader>r :VroomRunNearestTest<CR>
 silent! nmap <unique> <Leader>l :VroomRunLastTest<CR>
 
 " fugitive for git
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 
 set tags=./tags;/
 
 " Symmetric navigation inside vim and between vim/tmux
-Bundle 'christoomey/vim-tmux-navigator'
+Plugin 'christoomey/vim-tmux-navigator'
 
 filetype plugin indent on     " required!
 
-"Bundle 'vim-scripts/repeatable-motions.vim'
+"Plugin 'vim-scripts/repeatable-motions.vim'
 
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
 "
 " Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
-
-" End of Vundle stuff 
-"-------------------------------------------------
-
-
+" Put your non-Plugin stuff after this line

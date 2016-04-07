@@ -21,8 +21,10 @@ set noswapfile
 let g:CommandTMaxFiles=20000
 let g:CommandTMatchWindowReverse=1
 
-" Autosave
-autocmd BufLeave,FocusLost * silent! wall
+" Autosave and Autoread
+autocmd WinLeave,BufLeave,FocusLost * silent! wall
+autocmd FocusGained,WinEnter,BufEnter * :silent! !
+set autoread
 
 " Do not wrap searches
 set nowrapscan
