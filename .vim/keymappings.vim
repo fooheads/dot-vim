@@ -4,6 +4,15 @@ let mapleader = "\<Space>"
 " Type <Space>w to save file (a lot faster than :w<Enter>)
 nnoremap <Leader>w :w<CR>
 
+" Fix backspace problem
+set backspace=indent,eol,start
+
+" Fix slow delay between insert mode and normal mode in tmux.
+" http://www.johnhawthorn.com/2012/09/vi-escape-delays/
+" Note: This may have bad side effects when doing macros in insert mode
+"       that contains ESC. We'll see.
+set timeoutlen=1000 ttimeoutlen=0
+
 " Enter visual line mode with <Space><Space>:
 nmap <Leader><Leader> V
 
