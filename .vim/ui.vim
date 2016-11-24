@@ -46,6 +46,8 @@ endif
 "    set background=dark
 "endif
 
+" Clearer parenthesis matching
+hi MatchParen cterm=bold ctermbg=none ctermfg=black
 
 let &scrolloff=999-&scrolloff
 set relativenumber
