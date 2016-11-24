@@ -72,6 +72,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fireplace'
 Plugin 'guns/vim-clojure-highlight'
+Plugin 'kien/rainbow_parentheses.vim'
 
 au BufNewFile,BufRead *.cljs setlocal ft=clojure
 
